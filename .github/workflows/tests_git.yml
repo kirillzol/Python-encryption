@@ -2,7 +2,7 @@ name: Python CI
 
 on:
   push:
-    branches: [ development ]
+    branches: [development]
 
 jobs:
   build:
@@ -16,7 +16,6 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        node-version: 20
         python-version: '3.x'
 
     - name: Install dependencies
@@ -31,3 +30,7 @@ jobs:
       with:
         name: coverage-report
         path: coverage.xml
+
+    - name: Update Coverage Badge
+      if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+      uses: we-cli/coverage-badge-action@main
