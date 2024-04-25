@@ -1,5 +1,5 @@
 + <!-- README.md -->
-+ [![cov](https://kirillzol.github.io/Python-encryption/badges/coverage.svg)](https://github.com/<you>/<repo>/actions)
++ [![cov](https://kirillzol.github.com/Python-encryption/badges/coverage.svg)](https://github.com/<you>/<repo>/actions)
 
 # Python-encryption
 ## Описание проекта
