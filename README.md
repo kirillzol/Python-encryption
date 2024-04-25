@@ -1,3 +1,6 @@
++ <!-- README.md -->
++ [![cov](https://kirillzol.github.io/Python-encryption/badges/coverage.svg)](https://github.com/<you>/<repo>/actions)
+
 # Python-encryption
 ## Описание проекта
 
@@ -123,6 +126,3 @@ python main.py -d -a caesar -i encrypted.txt -l rus -k 5
 Обратите внимание:
 Перед запуском убедитесь, что у вас есть необходимые файлы для входных данных и выбраны правильные параметры для шифрования/дешифрования.
 В случае использования алгоритма statistical_caesar ключ не требуется.
-
-<!-- README.md -->
-+ [![cov](https://<you>.github.io/<repo>/badges/coverage.svg)](https://github.com/kirillzol/Python-encryption/actions)
