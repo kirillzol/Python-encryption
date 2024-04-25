@@ -14,6 +14,7 @@ def test_FileHandler():
 
     try:
         result_file_path = os.path.join(temp_dir, "Result.txt")
+        file_handler.write_to_file(os.path.join(temp_dir, "Result.txt"), '')
         file_handler.write_to_file(os.path.join(temp_dir, "temp_file.txt"), data)
         file_handler.encrypt_file(os.path.join(temp_dir, "temp_file.txt"), 'cesar', 'rus', '4')
         assert file_handler.read_file(result_file_path) == data_1
@@ -28,6 +29,7 @@ def test_FileHandler():
     temp_dir = tempfile.mkdtemp()
     try:
         result_file_path = os.path.join(temp_dir, "Result.txt")
+        file_handler.write_to_file(os.path.join(temp_dir, "Result.txt"), '')
         file_handler.write_to_file(os.path.join(temp_dir, "temp_file.txt"), data)
         file_handler.encrypt_file(os.path.join(temp_dir, "temp_file.txt"), 'vigenere', 'rus', key)
         data_1 = 'Тьжсб! Лз ж жзфу хжж ку ьгхфужмну?'
@@ -41,6 +43,7 @@ def test_FileHandler():
     temp_dir = tempfile.mkdtemp()
     try:
         result_file_path = os.path.join(temp_dir, "Result.txt")
+        file_handler.write_to_file(os.path.join(temp_dir, "Result.txt"), '')
         file_handler.write_to_file(os.path.join(temp_dir, "temp_file.txt"), data)
         file_handler.encrypt_file(os.path.join(temp_dir, "temp_file.txt"), 'vernam', 'rus', key)
         data_1 = 'Лъёмэ! Гё а ёёск раё дт тгруталит?'
@@ -55,6 +58,7 @@ def test_FileHandler():
 
     try:
         result_file = os.path.join(temp_dir, "Result.txt")
+        file_handler.write_to_file(os.path.join(temp_dir, "Result.txt"), '')
         file_handler.write_to_file(os.path.join(temp_dir, "temp_file.txt"), data)
         file_handler.decrypt_file(os.path.join(temp_dir, "temp_file.txt"), 'statistical_caesar', 'rus')
         assert os.path.exists(result_file)
