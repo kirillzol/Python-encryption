@@ -13,8 +13,7 @@ def test_FileHandler():
     temp_dir = tempfile.mkdtemp()
 
     try:
-        result_file_path = os.path.join(temp_dir, "Result.txt")
-        file_handler.write_to_file(os.path.join(temp_dir, "Result.txt"), '')
+        result_file_path = os.path.join(temp_dir, "result.txt")
         file_handler.write_to_file(os.path.join(temp_dir, "temp_file.txt"), data)
         file_handler.encrypt_file(os.path.join(temp_dir, "temp_file.txt"), 'cesar', 'rus', '4')
         assert file_handler.read_file(result_file_path) == data_1
