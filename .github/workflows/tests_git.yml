@@ -23,7 +23,7 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m pytest --cov-report json-summary --cov-report xml --cov=src tests/
+        python -m pytest --cov-report json --cov-report xml --cov=src tests/
     - name: Upload coverage report
       uses: actions/upload-artifact@v4
       with:
