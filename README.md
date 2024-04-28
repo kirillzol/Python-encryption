@@ -1,5 +1,5 @@
 [![Python CI](https://github.com/kirillzol/Python-encryption/actions/workflows/tests_git.yml/badge.svg)](https://github.com/kirillzol/Python-encryption/actions/workflows/tests_git.yml)
-
++ [![cov](https://kirillzol.github.io/Python-encryption/badges/coverage.svg)](https://github.com/kirillzol/Python-encryption/actions)
 # Python-encryption
 ## Описание проекта
 
