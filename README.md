@@ -1,5 +1,8 @@
 [![Python CI](https://github.com/kirillzol/Python-encryption/actions/workflows/tests_git.yml/badge.svg)](https://github.com/kirillzol/Python-encryption/actions/workflows/tests_git.yml)
-+ [![cov](https://kirillzol.github.io/Python-encryption/badges/coverage.svg)](https://github.com/kirillzol/Python-encryption/actions)
+[![tests](https://kirillzol.github.io/Python-encryption/badges/tests.svg)](https://kirillzol.github.io/Python-encryption/reports/junit/index.html)
+[![cov](https://kirillzol.github.io/Python-encryption/badges/coverage.svg)](https://kirillzol.github.io/Python-encryption/reports/coverage/index.html)
+[![flake8](https://kirillzol.github.io/Python-encryption/badges/flake8.svg)](https://kirillzol.github.io/Python-encryption/reports/flake8/index.html)
+
 # Python-encryption
 ## Описание проекта
 
